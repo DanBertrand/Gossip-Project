@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+
+
+  <body>
+    
+    <h2>Welcome <%= params["name"].capitalize %> !</h2>
+    
+    <p>Here you can find our brand new Gossip website. Let us know what you think about it ;)</p>
+    
+
+    <p>Below, you can check on all the Gossips already created</p>
+
+
+    <% @gossips.each do |gossip| %>
+    	
+       Gossip n°
+       <%= gossip.id %><br/>  
+       Author: <%= gossip.author %><br/>
+       Title: <%= gossip.title %><br/>
+       <br/>
+       <br/>
+
+    <% end %>
+
+
+  </body>
+</html>

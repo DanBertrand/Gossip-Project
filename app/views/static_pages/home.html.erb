@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1> Welcome to the Home page of "my gossip website" ! The gossip list is coming soon.</h1>
+
+
+
+   
+
+    <h2> You will be soon able to create a new gossip by clincking the link below</h2>
+
+
+   
+    <h2> Here is all the Gossip created previously</h2> 
+    <br/>  
+    <br/>  
+
+
+
+
+    <% @gossips.each do |gossip| %>
+      
+       Gossip n°
+       <%= gossip.id %><br/>  
+       Author: <%= gossip.author %><br/>
+       Title: <%= gossip.title %><br/>
+       Content: <%= gossip.content %><br/>
+       Creation date : <%= gossip.created_at %>
+
+
+
+
+
+  
+       <br/>
+       <br/>
+
+    <% end %>
+
+  </body>
+</html>
